@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62db06014b51bb349a9806318a6e3815, type: 3}
+  m_Name: UpgradeTree
+  m_EditorClassIdentifier: Assembly-CSharp::UpgradeTree
+  nodes:
+  - id: e0800756-7add-4262-98ed-3737b3aedc80
+    displayName: Node 2
+    isRoot: 1
+    type: 1
+    baseValue: 1
+    incrementValue: 0.5
+    isPercentage: 0
+    maxLevel: 5
+    levelCosts:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    editorPosition: {x: 601.99994, y: 409.80002}
+    connections:
+    - 4ce8625d-76dc-4a65-a76c-1b2a78d4ef3a
+    - de563f3f-5fd3-4d93-a5ee-7e655da24d00
+    - 5b70a946-c48d-4034-9ff7-c4f871a616a2
+    - d8f45418-61d8-4ce8-a861-9af465bbe046
+  - id: 4ce8625d-76dc-4a65-a76c-1b2a78d4ef3a
+    displayName: Node 2
+    isRoot: 0
+    type: 1
+    baseValue: 1
+    incrementValue: 0.5
+    isPercentage: 0
+    maxLevel: 5
+    levelCosts:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    editorPosition: {x: 602.7999, y: 163.39993}
+    connections: []
+  - id: de563f3f-5fd3-4d93-a5ee-7e655da24d00
+    displayName: Node 3
+    isRoot: 0
+    type: 2
+    baseValue: 1
+    incrementValue: 0.5
+    isPercentage: 0
+    maxLevel: 5
+    levelCosts:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    editorPosition: {x: 296.4, y: 407.4}
+    connections:
+    - c37d6483-b1d2-4292-b54d-f415f00e7ec6
+    - 9ce5472d-af1b-4b8f-ab65-95103654a7b3
+  - id: 5b70a946-c48d-4034-9ff7-c4f871a616a2
+    displayName: Node 4
+    isRoot: 0
+    type: 2
+    baseValue: 1
+    incrementValue: 0.5
+    isPercentage: 0
+    maxLevel: 5
+    levelCosts:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    editorPosition: {x: 905.99994, y: 413.00003}
+    connections: []
+  - id: d8f45418-61d8-4ce8-a861-9af465bbe046
+    displayName: Node 5
+    isRoot: 0
+    type: 3
+    baseValue: 1
+    incrementValue: 0.5
+    isPercentage: 0
+    maxLevel: 5
+    levelCosts:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    editorPosition: {x: 602, y: 677.80005}
+    connections: []
+  - id: c37d6483-b1d2-4292-b54d-f415f00e7ec6
+    displayName: Node 6
+    isRoot: 0
+    type: 3
+    baseValue: 1
+    incrementValue: 0.5
+    isPercentage: 0
+    maxLevel: 5
+    levelCosts:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    editorPosition: {x: 28.400055, y: 314.59998}
+    connections: []
+  - id: 9ce5472d-af1b-4b8f-ab65-95103654a7b3
+    displayName: Node 7
+    isRoot: 0
+    type: 1
+    baseValue: 1
+    incrementValue: 0.5
+    isPercentage: 0
+    maxLevel: 5
+    levelCosts:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    editorPosition: {x: 11.600067, y: 562.5999}
+    connections: []
