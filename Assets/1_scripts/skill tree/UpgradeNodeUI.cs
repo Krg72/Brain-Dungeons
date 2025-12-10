@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using DG.Tweening;
 
 public enum NodeState
 {
@@ -13,8 +14,8 @@ public enum NodeState
 public class UpgradeNodeUI : MonoBehaviour
 {
     public Button button;
-    public TMP_Text label;
-    public Image background;
+    public GameObject NodeObject;
+    public Image background, iconImage;
 
     [HideInInspector] public UpgradeNode data;
     [HideInInspector] public NodeState state;
@@ -30,9 +31,27 @@ public class UpgradeNodeUI : MonoBehaviour
     {
         manager = mgr;
         data = node;
-        label.text = node.displayName;
 
-        button.onClick.AddListener(() => manager.OpenDetailsPanel(this));
+        button.onClick.AddListener(() => OnClick());
+    }
+
+    public void OnClick()
+    {
+        // Stop any previous animation and snap to final rotation
+        transform.DOKill(true);
+
+        // Reset rotation to ensure no drift
+        transform.localRotation = Quaternion.identity;
+
+        // A nice rotational punch on Z axis
+        transform.DOPunchRotation(
+            punch: new Vector3(0, 0, 20f),   // degrees of punch
+            duration: 0.25f,                 // how long punch lasts
+            vibrato: 12,                     // how many shakes
+            elasticity: 0.6f                 // how much punch retains energy
+        );
+
+        manager.OpenDetailsPanel(this);
     }
 
     public void RefreshVisual()
@@ -41,27 +60,25 @@ public class UpgradeNodeUI : MonoBehaviour
         {
             case NodeState.Hidden:
                 background.color = hiddenColor;
-                label.color = new Color(1, 1, 1, 0);
                 button.interactable = false;
                 break;
 
             case NodeState.Locked:
                 background.color = lockedColor;
-                label.color = Color.white;
-                button.interactable = false;
+                button.interactable = true;
                 break;
 
             case NodeState.CanUpgrade:
                 background.color = canUpgradeColor;
-                label.color = Color.white;
                 button.interactable = true;
                 break;
 
             case NodeState.Maxed:
                 background.color = maxedColor;
-                label.color = Color.white;
                 button.interactable = false;
                 break;
         }
+
+        NodeObject.SetActive(state != NodeState.Hidden);
     }
 }

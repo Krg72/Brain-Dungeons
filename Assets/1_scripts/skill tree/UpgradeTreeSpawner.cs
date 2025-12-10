@@ -84,6 +84,11 @@ public class UpgradeTreeSpawner : MonoBehaviour
 
                 var conn = CreateConnector(uiLookup[n], uiLookup[target]);
                 conn.SetSiblingIndex(0); // push behind nodes
+
+                var ui = conn.GetComponent<UpgradeConnectorUI>();
+                ui.parentNode = n;
+                ui.childNode = target;
+                GameManager.Instance.UpgradeManager.RegisterConnector(ui);
             }
         }
 

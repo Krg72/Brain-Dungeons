@@ -5233,10 +5233,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button_FlushLeft_White
       objectReference: {fileID: 0}
-    - target: {fileID: 1291153877486365121, guid: ad5516c8604f74899a78ce9d0c55c08d, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7406319169337758430, guid: ad5516c8604f74899a78ce9d0c55c08d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -8163,10 +8159,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button_FlushLeft_Gray
       objectReference: {fileID: 0}
-    - target: {fileID: 5046479677215344379, guid: 507661935984042ab88b945d296e8029, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5046479677215344380, guid: 507661935984042ab88b945d296e8029, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -8488,10 +8480,6 @@ PrefabInstance:
     - target: {fileID: 66435348078028838, guid: c5f1a5d8c36524086ac3ba5a75f10edf, type: 3}
       propertyPath: m_Name
       value: Button_FlushRight_White
-      objectReference: {fileID: 0}
-    - target: {fileID: 66435348078028838, guid: c5f1a5d8c36524086ac3ba5a75f10edf, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2901014556401010176, guid: c5f1a5d8c36524086ac3ba5a75f10edf, type: 3}
       propertyPath: m_Pivot.x
@@ -10974,10 +10962,6 @@ PrefabInstance:
     - target: {fileID: 8422667719692949217, guid: aa370a3f54fef49308f2e2f06a192b98, type: 3}
       propertyPath: m_Name
       value: Button_FlushRight_Gray
-      objectReference: {fileID: 0}
-    - target: {fileID: 8422667719692949217, guid: aa370a3f54fef49308f2e2f06a192b98, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8422667719692949222, guid: aa370a3f54fef49308f2e2f06a192b98, type: 3}
       propertyPath: m_Pivot.x

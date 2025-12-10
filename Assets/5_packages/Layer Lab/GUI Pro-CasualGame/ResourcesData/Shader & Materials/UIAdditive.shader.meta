@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9e70d46433652fa44936daca9058dad1
+guid: 0eeebab2e713c3c47bfa95f2344fd5ca
 ShaderImporter:
   externalObjects: {}
   defaultTextures: []
@@ -7,10 +7,3 @@ ShaderImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 176695
-  packageName: GUI Pro - Casual Game
-  packageVersion: 4.1.1
-  assetPath: Assets/Layer Lab/GUI Pro-CasualGame/ResourcesData/Shader & Materials/UIAdditive.shader
-  uploadId: 754818

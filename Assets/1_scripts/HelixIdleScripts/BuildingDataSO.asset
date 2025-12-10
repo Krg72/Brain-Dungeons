@@ -1,0 +1,130 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d525235d46a97b34ea115adf03a6dc7f, type: 3}
+  m_Name: BuildingDataSO
+  m_EditorClassIdentifier: Assembly-CSharp::BuildingDataSO
+  buildingDataList:
+  - buildingType: 0
+    buildingName: Impact Lab
+    unlockCost: 5
+    baseCost: 25
+    costMultiplier: 1.2
+    baseValue: 1
+    IncreasePerLevel: 1
+    maxLevel: 50
+  - buildingType: 2
+    buildingName: Yield Lab
+    unlockCost: 5
+    baseCost: 50
+    costMultiplier: 1.2
+    baseValue: 1
+    IncreasePerLevel: 1
+    maxLevel: 50
+  - buildingType: 1
+    buildingName: Velocity Hub
+    unlockCost: 10
+    baseCost: 50
+    costMultiplier: 1.2
+    baseValue: 9.8
+    IncreasePerLevel: 0.2
+    maxLevel: 50
+  - buildingType: 11
+    buildingName: Max Balls
+    unlockCost: 10
+    baseCost: 100
+    costMultiplier: 1.2
+    baseValue: 10
+    IncreasePerLevel: 5
+    maxLevel: 25
+  - buildingType: 3
+    buildingName: Precision Lab
+    unlockCost: 15
+    baseCost: 50
+    costMultiplier: 1.2
+    baseValue: 1
+    IncreasePerLevel: 1
+    maxLevel: 50
+  - buildingType: 4
+    buildingName: Surge Lab
+    unlockCost: 15
+    baseCost: 50
+    costMultiplier: 1.2
+    baseValue: 1
+    IncreasePerLevel: 0.2
+    maxLevel: 50
+  - buildingType: 5
+    buildingName: Chain Loop
+    unlockCost: 20
+    baseCost: 100
+    costMultiplier: 1.2
+    baseValue: 1
+    IncreasePerLevel: 0.5
+    maxLevel: 20
+  - buildingType: 6
+    buildingName: Chain Bomb
+    unlockCost: 20
+    baseCost: 100
+    costMultiplier: 1.2
+    baseValue: 1
+    IncreasePerLevel: 0.5
+    maxLevel: 20
+  - buildingType: 7
+    buildingName: Pyro lab
+    unlockCost: 30
+    baseCost: 100
+    costMultiplier: 1.2
+    baseValue: 1
+    IncreasePerLevel: 0.5
+    maxLevel: 20
+  - buildingType: 8
+    buildingName: Smoke bomb
+    unlockCost: 30
+    baseCost: 100
+    costMultiplier: 1.2
+    baseValue: 1
+    IncreasePerLevel: 0.5
+    maxLevel: 20
+  - buildingType: 9
+    buildingName: Sword Lab
+    unlockCost: 30
+    baseCost: 100
+    costMultiplier: 1.2
+    baseValue: 1
+    IncreasePerLevel: 0.5
+    maxLevel: 20
+  - buildingType: 10
+    buildingName: Tornado
+    unlockCost: 30
+    baseCost: 100
+    costMultiplier: 1.2
+    baseValue: 1
+    IncreasePerLevel: 0.5
+    maxLevel: 20
+  upgradeDataList:
+  - upgradeType: 0
+    upgradeName: ADD
+    baseCost: 10
+    costMultiplier: 1.2
+    baseValue: 1
+    IncreasePerLevel: 1
+  - upgradeType: 1
+    upgradeName: MERGE
+    baseCost: 10
+    costMultiplier: 1.15
+    baseValue: 1
+    IncreasePerLevel: 1
+  - upgradeType: 2
+    upgradeName: INCOME
+    baseCost: 30
+    costMultiplier: 1.1
+    baseValue: 1
+    IncreasePerLevel: 1

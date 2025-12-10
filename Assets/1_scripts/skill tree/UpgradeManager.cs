@@ -8,6 +8,8 @@ public class UpgradeManager : MonoBehaviour
 
     private Dictionary<string, int> levels = new();
     private Dictionary<UpgradeNode, UpgradeNodeUI> uiNodes = new();
+    
+    private List<UpgradeConnectorUI> connectors = new();
 
     public int GetNodeLevel(string id) => levels[id];
 
@@ -21,14 +23,16 @@ public class UpgradeManager : MonoBehaviour
     {
         uiNodes[node] = ui;
         levels[node.id] = 0; // default
-
-        Debug.Log("levels count after register " + levels.Count);
     }
 
-    public void Start()
+    public void RegisterConnector(UpgradeConnectorUI conn)
+    {
+        connectors.Add(conn);
+    }
+
+    void Start()
     {
         detailsPanel.Setup(this);
-        RefreshAll();
     }
 
     public void OpenDetailsPanel(UpgradeNodeUI ui)
@@ -70,9 +74,6 @@ public class UpgradeManager : MonoBehaviour
         Queue<UpgradeNode> q = new Queue<UpgradeNode>();
         q.Enqueue(root);
 
-        Debug.Log("levels count " + levels.Count);
-
-
         while (q.Count > 0)
         {
             var node = q.Dequeue();
@@ -110,6 +111,15 @@ public class UpgradeManager : MonoBehaviour
             }
 
             ui.RefreshVisual();
+        }
+
+        foreach (var conn in connectors)
+        {
+            bool parentVisible = uiNodes[conn.parentNode].state != NodeState.Hidden;
+            bool childVisible = uiNodes[conn.childNode].state != NodeState.Hidden;
+
+            bool shouldShow = parentVisible && childVisible;
+            conn.Refresh(shouldShow);
         }
     }
 }

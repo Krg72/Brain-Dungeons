@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fedf2325fe3734141893170481a633f8
+guid: 9493d7f004fad1d42b06718867fef030
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -63,7 +63,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
-  cookieLightType: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -133,10 +133,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 176695
-  packageName: GUI Pro - Casual Game
-  packageVersion: 4.1.1
-  assetPath: Assets/Layer Lab/GUI Pro-CasualGame/ResourcesData/Sprites/Components/Icon_ItemIcons/Original/Icon_Potion02_Green.png
-  uploadId: 754818

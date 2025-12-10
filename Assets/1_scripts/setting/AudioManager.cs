@@ -15,8 +15,6 @@ public class AudioManager : MonoBehaviour
 
     public AudioClip[] musics;
 
-    public AudioClip[] zombieDeathSounds;
-
     private void Awake()
     {
         if (instance == null) instance = this;
@@ -43,15 +41,6 @@ public class AudioManager : MonoBehaviour
         audioSource.PlayOneShot(AllClips.Find(data => data.AudioClipName == audioClipName).Clip);
     }
 
-    public void PlayZombieDeathSound()
-    {
-        if (zombieDeathSounds.Length > 0)
-        {
-            audioSource.PlayOneShot(zombieDeathSounds[UnityEngine.Random.Range(0, zombieDeathSounds.Length)]);
-        }
-    }
-
-
     public void ApplyAudioSettings(bool soundOn, bool musicOn)
     {
         audioSource.mute = !soundOn;
@@ -70,12 +59,8 @@ public enum AudioClipNames
 {
     ButtonClick,
     ButtonFail,
-    EnemyDeath,
-    CoinCollect,
-    Bomb,
-    ChestOpen,
-    Reward,
-    Zombiehit,
-    ZombieAttack
+    BallBounce,
+    BallMerge,
+    DestroyRing,
 }
 

@@ -81,12 +81,12 @@ public class SettingManager : MonoBehaviour
 
         soundOnTgl.onValueChanged.AddListener(SetSound);
         musicOnTgl.onValueChanged.AddListener(SetMusic);
-
-        /*fpsTgl.onValueChanged.AddListener(ChangeFPSSetting);
         vibrateTgl.onValueChanged.AddListener(ChangeVibrateSetting);
 
         FloatTextTgl.onValueChanged.AddListener(ChangeFloatTextSetting);
 
+        /*fpsTgl.onValueChanged.AddListener(ChangeFPSSetting);
+        
         FPSTextTgl.onValueChanged.AddListener(ChangeFPSTextSetting);*/
 
         //qualityDropdown.onValueChanged.AddListener(OnQualitySettingChange);
